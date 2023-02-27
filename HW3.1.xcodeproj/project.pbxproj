@@ -113,12 +113,12 @@
 		87F9F72E28D4DDFD001A1B09 /* HW3.1 */ = {
 			isa = PBXGroup;
 			children = (
-				873F2CC128DB515600D99DAE /* App */,
+				873F2CC528DB51BF00D99DAE /* Model */,
+				873F2CC628DB51EF00D99DAE /* Data */,
 				873F2CC228DB518000D99DAE /* ViewControllers */,
 				873F2CC328DB518B00D99DAE /* Storyboards */,
 				873F2CC428DB519600D99DAE /* Resourses */,
-				873F2CC528DB51BF00D99DAE /* Model */,
-				873F2CC628DB51EF00D99DAE /* Data */,
+				873F2CC128DB515600D99DAE /* App */,
 			);
 			path = HW3.1;
 			sourceTree = "<group>";
@@ -133,6 +133,7 @@
 				87F9F72828D4DDFD001A1B09 /* Sources */,
 				87F9F72928D4DDFD001A1B09 /* Frameworks */,
 				87F9F72A28D4DDFD001A1B09 /* Resources */,
+				870581B429AD146E00B34033 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +195,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		870581B429AD146E00B34033 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87F9F72828D4DDFD001A1B09 /* Sources */ = {

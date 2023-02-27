@@ -5,8 +5,9 @@
 //  Created by Иван Худяков on 16.09.2022.
 //
 
+import Foundation
+
 struct Animation {
-    
     let name: String
     let curve: String
     let force: Double
@@ -26,7 +27,6 @@ struct Animation {
 
 extension Animation {
     static func getAnimation() -> Animation {
-        
                 Animation(name: DataStore.shared.allPresent.randomElement()?.rawValue ?? "pop",
                                          curve: DataStore.shared.allCurve.randomElement()?.rawValue ?? "linear",
                                          force: Double.random(in: 0.0..<1.0),
@@ -34,4 +34,3 @@ extension Animation {
                                          delay: Double.random(in: 0.0..<1.0))
         }
 }
-
